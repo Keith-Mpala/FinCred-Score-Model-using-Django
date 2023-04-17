@@ -64,6 +64,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://fincred-score-model-using-django-production.up.railway.app",
 ]
+CSRF_TRUSTED_ORIGINS = ["https://fincred-score-model-using-django-production.up.railway.app"]
 
 
 ROOT_URLCONF = 'website.urls'
