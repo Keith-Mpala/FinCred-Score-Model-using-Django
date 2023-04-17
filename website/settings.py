@@ -60,6 +60,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+#
+CORS_ALLOWED_ORIGINS = [
+    "https://fincred-score-model-using-django-production.up.railway.app",
+]
+
+
 ROOT_URLCONF = 'website.urls'
 
 TEMPLATES = [
