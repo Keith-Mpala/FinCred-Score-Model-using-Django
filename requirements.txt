@@ -14,3 +14,5 @@ virtualenv==20.21.0
 webencodings==0.5.1
 whitenoise==6.4.0
 gunicorn==20.1.0
+website ==1.1
+Website==1.1
