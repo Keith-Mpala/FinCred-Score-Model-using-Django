@@ -1,0 +1,185 @@
+/* styles.css for tags */
+em {
+    font-style: italic;
+    color: #2666aa;
+    font-size: 1.0em; /* increase font size */
+}
+
+.bold-em {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em; /* increase font size */
+}
+
+
+/* center for texts  */
+.center {
+    text-align: center;
+}
+  
+.background-div {
+    background-color: rgb(231, 235, 241);
+} 
+
+
+/* paragraph design  */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+.paddings {
+    padding: 10px;
+    }
+
+/* lists  */
+ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+    margin-left: 0;
+    padding-left: 0;
+    }
+    
+ol li {
+    counter-increment: my-counter;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+}
+    
+ol li:before {
+    content: counter(my-counter);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    background-color: #83b2e4;;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+
+/* footer of Home page  */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    }
+
+
+/*linked in */
+.linkedin-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #0077B5;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .linkedin-link:hover {
+    transform: scale(1.1);
+  }
+
+/* text colors for scores*/
+
+.green-text {
+    color: rgb(15, 139, 15);
+
+}
+.orange-text {
+    color: orange;
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: rgb(28, 28, 241);
+}
+
+.black-text {
+    color: black;
+}
+
+
+/* fr hyperlinks not to be blue*/
+.white-href-footer {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change link color to white */
+}
+
+
+/* Button clicks  */
+.button-submit {
+    background-color: rgb(137, 173, 221);
+    color: rgb(87, 29, 29);
+    padding: 8px 15px; 
+    border-radius: 12px; 
+    border: none; 
+    cursor: pointer;
+  }
+
+  /* Social media*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-linkedin {
+  font-size: 32px;
+  color: #0077B5;
+}
+
+
+.fa-twitter {
+    font-size: 32px;
+    color: #1DA1F2;
+  }
+  
+  .fa-facebook {
+    font-size: 32px;
+    color: #3B5998;
+  }
+  
+  .fa-github {
+    font-size: 32px;
+    color: #211F1F;
+  }
+  
+ 
+
+  .fa-r-project {
+    font-size: 32px;
+    color: #1f4a9b;
+  }
+
+  .fa-instagram {
+    font-size: 32px;
+    color: #f83c2f;
+  }
+
+
+  
+  
+  
+  
+  
+  

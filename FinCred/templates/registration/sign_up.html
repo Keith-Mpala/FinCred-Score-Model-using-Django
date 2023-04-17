@@ -1,0 +1,18 @@
+{% extends 'FinCred/base.html' %} {% block title%}Sign_up{% endblock %}
+{% load crispy_forms_tags %} {% block content %}
+
+<br><br><br><br><br>
+<div class="container">
+    <h4>Create an Account with <em class="bold-em">fin</em><strong>Cred<em>®</em></strong></h4>
+    <p>We’ll need some of your information first.</p>
+</div>
+
+<div  class="container  d-flex justify-content-center " >
+    <form method="post">
+        {% csrf_token %} {{form|crispy}}
+        <p>Already have an account? Login <a href="/login">Here</a>!</p>
+        <button type="submit" class="btn btn-success"><a href="/login"></a>Register</button>
+    </form>
+</div>
+
+{% endblock %}

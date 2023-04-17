@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'FinCred/base.html' %}
+{% block title %}Home Page{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+
+<body>
+    <br><br><br>
+    <div class ="container" >
+        <h2> Welcome to <em class="bold-em">fin</em><strong>Cred</strong> Credit Score Rating Agency!! </h2>
+        <p> <i>Checking Your Credit Made Easy with Us!!</i> </p>
+
+        <div class="paddings">
+            <h5  class="center"> 
+                The FinCred Score is a simple App designed for lending institutions for their risk assessment needs. 
+                App can also be used my individuals to assess their credit worthiness.
+            </h5>
+        </div>
+        <br>
+        <h2 class="center"><em> Can I Calculate my Credit Score ? </em></h2>
+    </div>
+
+    <div class="container">
+        <h4> Sign In to Check your Score! </h4>
+        <button type="submit" class="button-submit"> <a class="white-href-footer" href="/login">Sign In </a></button> 
+        <h4>New to FinCred? Register Below!! </h4>
+        <button type="submit" class="button-submit" > <a class="white-href-footer" href="/sign_up">Register With Us</a></button> 
+        <h4>Already Logged In? Calculate your <em class="bold-em">fin</em><strong>Cred<em>®</em>  </strong>Score!!! </h4>
+        <button type="submit" class="button-submit"> <a class="white-href-footer" href="/employment_details">Estimate your finCred Score</a> </button>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="center" class="paddings">
+        <h3>About <em class="bold-em">fin</em><strong>Cred<em>®</em> Credit Scores</strong> </h3>
+        <p>FinCred<span>&#174;</span> is an app created to helping our users improve their financial wellbeing. The 
+            application is used for users to check their credit worthiness. 
+            • Users provide their credit history and the information is used to estimate their credit score.
+            • The credit score ranges between 300-850 and graded with highest score attaining an excellent remark and the least scores attaining an adverse remark. The higher the score, the better a borrower looks to potential lenders.
+            • FinCred also provides recommendations to users on financial institutions with affordable interest rates to approach based on the credit score outcome.
+        </p> 
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+<footer style="background-color: rgba(0, 0, 0, 0.8); color: white;">
+    <!-- Add your footer content here -->
+    <br>
+    <div class="container-fluid">
+
+        <div style="display: inline-block;">
+            <ul class="navbar-nav" class="paddings" >
+                <h5>  🎓 Credit Education</h5>
+                
+                <li class="paddings" class="nav-item"> 
+                    <a class="white-href-footer" href="https://www.experian.com/blogs/ask-experian/credit-education/score-basics/what-affects-your-credit-scores/"> What factors impact your Credit Score? </a>
+                </li>
+                <li class="paddings" class="nav-item"> 
+                    <a class="white-href-footer" href="https://www.wellsfargo.com/financial-education/credit-management/calculate-credit-score/"> How is your Credit Score Calculated </a> 
+                </li>
+                <li class="paddings" class="nav-item" > 
+                    <a class="white-href-footer" href="https://www.investopedia.com/how-to-improve-your-credit-score-4590097"> How to improve your credit score </a>
+                </li>
+                <li class="paddings" class="nav-item">
+                    <a class="white-href-footer" href="https://www.hsbc.co.uk/credit-cards/what-is-a-credit-score/"> What is a credit score? </a> 
+                </li>
+            </ul>
+        </div>
+
+        <div style="display: inline-block;">
+            <ul class="navbar-nav" class="paddings" >
+                <h5>  📑 Articles </h5>
+                <ul class="paddings" class="nav-item">
+                    <a class="white-href-footer"  href="https://www.economist.com/international/2019/07/06/a-brief-history-and-future-of-credit-scores?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18798097116&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gclid=Cj0KCQjwlumhBhClARIsABO6p-zwSSfv8GiEa1ntlAbnePr8UmzBjM2Cc6hj2HnBU7QKCxilTPA7JuAaAjj6EALw_wcB&gclsrc=aw.ds" style="display: inline-block;"> The Economist Group</a> |
+                    
+                    <a class="white-href-footer" href="https://www.cambridge-credit.org/understanding-credit-scores.html?gclid=Cj0KCQjwlumhBhClARIsABO6p-zxkE-2-126yTZQTV9R0D7Yd_9UkVWxQJ6jSamzz75kDuEQCtIa3aAaAtepEALw_wcB"> Cambridge</a>
+                </ul>
+                <ul class="paddings" class="nav-item"> 
+                    <a class="white-href-footer" href="https://www.theepochtimes.com/c-credit-scores?utm_medium=GoogleAds&utm_source=PerfmaxM&utm_campaign=PM_max_GA_L2_0405&gclid=Cj0KCQjwlumhBhClARIsABO6p-zC3SKqAeN-RezqvGEPCKN068WVBwF_CKSAJoVR0qaK-quQC35VwckaAlITEALw_wcB" style="display: inline-block;"> The Epoch Times </a> |
+                    <a class="white-href-footer" href="https://www.forbes.com/advisor/credit-score/what-makes-up-your-credit-score/" style="display: inline-block;"> Forbes </a> 
+                </ul>
+                <ul class="paddings" class="nav-item">
+                    <a class="white-href-footer" href="https://www.investopedia.com/terms/c/credit_score.asp" style="display: inline-block;"> Investopedia </a> 
+                </ul>
+            </ul>
+        </div>
+        
+        <div style="display: inline-block;">
+        
+            <ul class="navbar-nav">
+                <h5>⚡ Other Projects </h5>
+                <li class="paddings" class="nav-item">
+                    <a class="white-href-footer" href="https://web-production-3150.up.railway.app/"> Loan Status Prediction using Machine Learning Models </a> 
+                </li>
+                <li class="paddings" class="nav-item"> 
+                    <a class="white-href-footer" href=""> A simple Notes App for Sentiment Analysis of Textual data </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div style="display: inline-block;">
+        
+            <ul class="navbar-nav" >
+                <h5> 😄 Social Media </h5>
+                <ul class="nav-item">
+                    <a href="https://twitter.com/keithmpala"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/xolanikeithromeo.mpala"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin"></span></a>
+                </ul>
+                
+            </ul>
+        </div>
+       
+    </div>
+        <hr>
+        <p> &copy; <em class="bold-em">finCred</em><em>®</em> 2023. All Rights Reserved</p>
+    <div>
+</footer>
+
+{% endblock %}
+</html>

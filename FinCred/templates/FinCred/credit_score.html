@@ -1,0 +1,63 @@
+{% extends 'FinCred/base.html' %}
+{% block title %}Home Page{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+
+
+<br><br><br><br>
+<body>
+    <div class="paddings" >
+        <h1><em>my</em><em class="bold-em">fin</em><strong>Cred Score</strong></h1>
+        
+        <div class="paddings">
+            <h3> <em> {{ request.user }}</em> Your credit score is: </h3>
+            {% if final_score < 580 %}
+            <h1 class="red-text" ><strong>{{ final_score }}</strong></h1>
+            {% elif 580 < final_score and final_score < 660 %}
+            <h1 class="orange-text" ><strong>{{ final_score }}</strong></h1>
+            {% elif 661 < final_score and final_score < 780 %}
+            <h1 class="green-text" ><strong>{{ final_score }}</strong></h1>
+            {% else %}
+            <h1 class="blue-text" ><strong>{{ final_score }}</strong></h1>
+            {% endif %}
+        </div>
+
+      <p >Your Score is an estimation based upon your responses. </p>
+      <p>(Results are only an estimation of your credit score and cannot predict whether you will be approved for a new credit card.)</p>
+    </div>
+
+    <div class="container">
+      <h2><em>How to read and understand your free credit scores</em></h1>
+        <p>Your credit scores can be a useful reflection of your overall credit health. But to get the most out of your scores, you must first understand how they work, what they represent and what actually constitutes a good credit score.</p>  
+        <h4 class="blue-text" ><strong>Excellent (781–850)</strong></h4>
+        <p>You may qualify for the best financial products available, and you’ll likely have several options when it comes to choosing repayment periods or other terms. But excellent credit scores aren’t the only factor in a lending decision — a lender could still deny your application for another reason.</p>
+        <h4 class="green-text"><strong>Good (661–780)</strong></h4>
+        <p>You’re less likely to have an application denied based solely on your credit scores, compared to having scores in the fair or poor range, and you’re more likely to be offered a low interest rate and favorable terms.</p>
+        <h4 class="orange-text"><strong>Fair (581–660)</strong></h4>
+        <p>You may have several options when it comes to getting approved for a financial product, but you might not qualify for the best terms.</p>
+        <h4 class="red-text"><strong>Poor (300–580)</strong></h4>
+        <p>You may find it difficult to get approved for many loans or unsecured credit cards. And if you’re approved, you might not qualify for the best terms or lowest interest rate.</p>
+    </div>
+
+  <div style="display: inline-block;">
+    <ul class="navbar-nav" >
+      <hr>
+      <h4 class="center"> Keith Mpala</h4>
+      <p class="center">I'm a Masters student of Data Science & Business Analytics at the University of Warsaw on a mission to make use of Machine Learning Tools and Technologies to improve business processes 📈.</p> 
+    </ul>
+    <nav class="center">
+      <a href="https://twitter.com/keithmpala"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/xolanikeithromeo.mpala"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin"></span></a>
+      <a href="https://rpubs.com/keith_mpala"><i class="fab fa-r-project"></i></a>
+      <a href="https://github.com/Keith-Mpala"><i class="fab fa-github"></i></a>
+    </nav>
+  </div>
+  <hr>
+  <p> &copy; <em class="bold-em">fin</em><strong>Cred<em>®</em>  </strong>2023 | Data Science. All Rights Reserved</p>
+
+</body>
+
+{% endblock %}

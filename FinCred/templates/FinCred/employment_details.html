@@ -1,0 +1,51 @@
+
+{% extends 'FinCred/base.html' %}
+{% block title %}Home Page{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+
+<br><br><br><br>
+<body>
+    <div class="paddings">
+        <h1><strong>My</strong> <em class="bold-em" >fin</em><strong>Cred<em>®</em> Score</strong></h1>
+        <br>
+        <h3>👋 <em>{{ request.user }}</em> </h3>
+        <p>You're successfully logged in.</p>
+    </div>
+
+    <div class="center">
+        <h5 class="paddings">Understanding your Credit Score is a vital part of your financial health. Answer <em class="bold-em">fin</em><strong>Cred Score</strong> easy questions and we will estimate your Credit Score range for free</h5>
+        <h3 class="center"><em>Please provide your employment details below </em></h3>
+    </div>   
+    
+    <div class="container  d-flex justify-content-center">
+        <form method="POST">
+            {% csrf_token %} 
+            {{employment_form|crispy}}
+            <button type="submit" class="btn btn-success"> <a class="white-href-footer" href="/credit_details">Submit</a></button>
+        </form>
+    </div>
+
+    <div class="paddings">   
+        <h2 class="paddings"> <em>What Isn't in Your Score</em></h2> 
+        <h5>The following information is not considered in determining your credit score, according to <em class="bold-em">fin</em><strong>Cred<em>®</em></strong> </h5>   
+        <ol>
+            Marital status - 
+            Age (though some other types of scores may consider this) -
+            Race, color, religion, national origin, sex -
+            Occupation, employment history -
+            Your Interest Rates and/ Penalities Incurred - 
+            Where you live -
+            Personal Information (Only what you provide is used for estimation)
+        </ol>    
+    </div>
+    <div class="paddings">
+        <hr>
+        <p > &copy; <em class="bold-em">fin</em><strong>Cred<em>®</em>  </strong>2023 | Data Science. All Rights Reserved</p>
+        <a href="https://twitter.com/keithmpala"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/xolanikeithromeo.mpala"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>  
+    </div>
+</body>
+{% endblock %}
